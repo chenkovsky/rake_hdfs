@@ -1,9 +1,9 @@
-require "webhdfs"
+require "webhdfs/fileutils"
 module WebHDFS
   module FileUtils
     def exist?(file, options={})
       begin
-        client.stat(path, options)
+        client.stat(file, options)
         return true
       rescue FileNotFoundError => e
         return false
