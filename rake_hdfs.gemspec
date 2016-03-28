@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rake_hadoop/version'
+require 'rake_hdfs/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rake_hadoop"
+  spec.name          = "rake_hdfs"
   spec.version       = RakeHadoop::VERSION
   spec.authors       = ["chenkovsky.chen"]
   spec.email         = ["chenkovsky.chen@cootek.cn"]
 
   spec.summary       = %q{some rake dsl for hadoop}
   spec.description   = %q{some rake dsl for hadoop}
-  spec.homepage      = "http://github.com/chenkovsky/rake_hadoop"
+  spec.homepage      = "http://github.com/chenkovsky/rake_hdfs"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

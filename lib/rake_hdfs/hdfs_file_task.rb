@@ -8,7 +8,7 @@ module Rake
   # represented by this task, then the file must be rebuilt (using the
   # supplied actions).
   #
-  class FileTask < Task
+  class HDFSFileTask < Task
 
     # Is this file task needed?  Yes if it doesn't exist, or if its time stamp
     # is out of date.

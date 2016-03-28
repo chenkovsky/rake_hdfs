@@ -1,0 +1,5 @@
+require "rake_hdfs/version"
+require "rake_hdfs/hdfs_dsl_definition"
+require "rake_hdfs/hdfs_file_creation_task"
+require "rake_hdfs/hdfs_file_task"
+require "rake_hdfs/hdfs_fileutils"

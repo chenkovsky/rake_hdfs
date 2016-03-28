@@ -1,3 +1,4 @@
+require "webhdfs"
 module WebHDFS
   module FileUtils
     def exist?(file, options={})

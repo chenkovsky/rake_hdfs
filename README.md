@@ -1,4 +1,4 @@
-# RakeHadoop
+# RakeHdfs
 
 this gem makes rake run on hdfs file system. it's based on webhdfs.
 
@@ -8,7 +8,7 @@ this gem makes rake run on hdfs file system. it's based on webhdfs.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rake_hadoop'
+gem 'rake_hdfs'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rake_hadoop
+    $ gem install rake_hdfs
 
 ## Usage
 
@@ -42,7 +42,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/chenkovsky/rake_hadoop/fork )
+1. Fork it ( https://github.com/chenkovsky/rake_hdfs/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

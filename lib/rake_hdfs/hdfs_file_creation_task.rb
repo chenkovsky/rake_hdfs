@@ -20,3 +20,4 @@ module Rake
       Rake::EARLY
     end
   end
+end
