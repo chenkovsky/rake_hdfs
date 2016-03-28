@@ -1,0 +1,5 @@
+require "rake_hadoop/version"
+require "rake_hadoop/hdfs_dsl_definition"
+require "rake_hadoop/hdfs_file_creation_task"
+require "rake_hadoop/hdfs_file_task"
+require "rake_hadoop/hdfs_fileutils"
