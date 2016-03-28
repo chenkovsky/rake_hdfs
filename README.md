@@ -1,8 +1,7 @@
 # RakeHadoop
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rake_hadoop`. To experiment with that code, run `bin/console` for an interactive prompt.
+this gem makes rake run on hdfs file system. it's based on webhdfs.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,17 +21,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+hfile "file_name_on_hdfs" do 
+    # use it like file, except it's on hdfs
+end
 
-## Development
+hdirectory "directory_on_hdfs"
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+task "a" do
+    unless huptodate? "file_on_hdfs", ["file_on_hdfs1",...]
+        hstat "filename"
+        hmkdir_p "dir_name"
+        hrm "dir_name"
+        hexist? "filename"
+        hchmod mode, "file"
+        hls "dir_name"
+    end
+end
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/rake_hadoop/fork )
+1. Fork it ( https://github.com/chenkovsky/rake_hadoop/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
