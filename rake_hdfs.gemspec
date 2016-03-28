@@ -5,7 +5,7 @@ require 'rake_hdfs/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rake_hdfs"
-  spec.version       = RakeHadoop::VERSION
+  spec.version       = RakeHDFS::VERSION
   spec.authors       = ["chenkovsky.chen"]
   spec.email         = ["chenkovsky.chen@cootek.cn"]
 
