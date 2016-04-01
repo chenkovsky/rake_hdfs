@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "rake_hdfs"
   spec.version       = RakeHDFS::VERSION
   spec.authors       = ["chenkovsky.chen"]
-  spec.email         = ["chenkovsky.chen@cootek.cn"]
+  spec.email         = ["chenkov@yeah.net"]
 
   spec.summary       = %q{some rake dsl for hadoop}
   spec.description   = %q{some rake dsl for hadoop}
