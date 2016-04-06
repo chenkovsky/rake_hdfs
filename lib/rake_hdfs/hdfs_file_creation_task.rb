@@ -8,7 +8,7 @@ module Rake
   # not re-triggered if any of its dependencies are newer, nor does trigger
   # any rebuilds of tasks that depend on it whenever it is updated.
   #
-  class HDFSFileCreationTask < FileTask
+  class HDFSFileCreationTask < HDFSFileFileTask
     # Is this file task needed?  Yes if it doesn't exist.
     def needed?
       ! WebHDFS::FileUtils.exist?(name)
