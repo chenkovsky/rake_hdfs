@@ -38,7 +38,7 @@ module WebHDFS
 
     def mtime(path, options = {})
       file_stat = stat(path, options)
-      file_stat["modificationTime"]
+      Time.at (file_stat["modificationTime"].to_f/1000)
     end
     module_function :mtime
   end
